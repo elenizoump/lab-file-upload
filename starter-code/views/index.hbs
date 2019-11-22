@@ -1,1 +1,10 @@
-<p>Welcome to our Lab!</p>
+<h1>Welcome to our Lab!</h1>
+
+
+<h2>All Posts</h2>
+
+{{#each posts}}
+<a href="/post/{{ this._id }}">
+  {{> singlepost}}
+</a>
+{{/each}}
